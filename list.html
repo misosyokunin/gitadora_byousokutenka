@@ -1,7 +1,1233 @@
 <html>
-  <head>
-  </head>
-  <body>
-    <h1>eeee</h1>
-  </body>
+	<head>
+		<meta charset="UTF-8">
+		<title>GITADORA_FROM_🚀</title>
+	</head>
+	<style>
+		*{
+			font-size: calc(100vw / 200 + 10px);
+		}
+		.hiddenContent{
+			display: none;
+		}
+		.comment_content{
+			display: none;
+		}
+		.show_comment .comment_content{
+			display: table-cell;
+		}
+		table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+		thead th {
+			background-color: #080;
+			color: #FFF;
+			vertical-align: inherit;
+		}
+		td, th {
+			border-bottom: solid 1px #000;
+			vertical-align: baseline;
+		}
+		tr:nth-child(2n+1) {
+			background-color: #EFE;
+		}
+		tr:nth-child(2n) {
+			background-color: #FEE;
+		}
+	</style>
+	<body>
+		<form id="extractionMusicTable" class="tableFilterForm" onsubmit="return false;">
+			<label>
+				<input type="checkbox" id="checkbox_comment"value="コメント">
+				<span>コメント</span>
+			</label>
+			<label>
+				<input type="checkbox" class="filterCategory media" value="CD1" data-tarnum="0">
+				<span>CD1</span>
+			</label>
+			<label>
+				<input type="checkbox" class="filterCategory media" value="CD2" data-tarnum="0">
+				<span>CD2</span>
+			</label>
+			<label>
+				<input type="checkbox" class="filterCategory media" value="CD3" data-tarnum="0">
+				<span>CD3</span>
+			</label>
+			<label>
+				<input type="checkbox" class="filterCategory media" value="CD4" data-tarnum="0">
+				<span>CD4</span>
+			</label>
+		</form>
+		<table id="MusicTable" class="withFilterTable">
+			<thead>
+				<tr>
+					<th>DISC</th>
+					<th>トラック</th>
+					<th>曲名</th>
+					<th>クレジット</th>
+					<th class="comment_content">コメント</th>
+				</tr>
+			</thead>
+			<tbody>
+<tr>
+	<td>CD1</td>
+	<td>0</td>
+	<td>Metal Queen</td>
+	<td>Vanilla Ninja（提供）</td>
+	<td class="comment_content">みんなプレイしていた。<br>この曲、ギターがかっこいいです。<br>しかし、サントラでは、ギターの主張が抑えられているため。ギターソロがあんまりかっこよく聴こえず、プレイ時とのギャップが激しいです。</td>
+</tr>
+<tr>
+	<td>CD1</td>
+	<td>1</td>
+	<td>R#1</td>
+	<td>colors</td>
+	<td class="comment_content">みんなプレイしていた。</td>
+</tr>
+<tr>
+	<td>CD1</td>
+	<td>2</td>
+	<td>ファミレス・ボンバー</td>
+	<td>SEX MACHINEGUNS（版権）</td>
+	<td class="comment_content">みんなプレイしていた。<br>なかでもＩさんはつなぎまくっていた。すげぇ。</td>
+</tr>
+<tr>
+	<td>CD1</td>
+	<td>3</td>
+	<td>The Legend</td>
+	<td>Ritter</td>
+	<td class="comment_content">みんなプレイしていた。</td>
+</tr>
+<tr>
+	<td>CD1</td>
+	<td>4</td>
+	<td>ツミナガラ...と彼女は謂ふ</td>
+	<td>あさき</td>
+	<td class="comment_content">Ｉさんの印象があります。</td>
+</tr>
+<tr>
+	<td>CD1</td>
+	<td>5</td>
+	<td>Venus</td>
+	<td>Tatsh+RayZY</td>
+	<td class="comment_content">「シャー芯ノルウェー」とかＮさんが空耳化していました。確かに聴こえる。</td>
+</tr>
+<tr>
+	<td>CD1</td>
+	<td>6</td>
+	<td>カナリヤ：GFdm-MIX</td>
+	<td>nicaco(提供)</td>
+	<td class="comment_content">みんなプレイしていた。</td>
+</tr>
+<tr>
+	<td>CD1</td>
+	<td>7</td>
+	<td>Panasonic Youth</td>
+	<td>THE DILLINGER ESCAPE PLAN(提供)</td>
+	<td class="comment_content">ＮさんとUが「これむずいぞ！」Ｙに勧めてきた曲です。<br>家庭用Vでは難度69くらいだったと思うのですが、アーケードでは80でした。</td>
+</tr>
+<tr>
+	<td>CD1</td>
+	<td>8</td>
+	<td>赤い鈴</td>
+	<td>あさき</td>
+	<td class="comment_content">Ｉさんがよく選曲していた印象。<br>Ｎさんはカラオケで選曲していた。</td>
+</tr>
+<tr>
+	<td>CD1</td>
+	<td>9</td>
+	<td>そっと。</td>
+	<td>鈴木愛</td>
+	<td class="comment_content">みんなプレイしていた。<br>中でもＮさんは、よくゲーセンで選曲していた。<br>ちなみに、Ｎさんはその際にRANDOMのオプションをなぜか付けていた（「正規譜面だと、苦手意識も憶えてしまう」だそうな。一理ある）。</td>
+</tr>
+<tr>
+	<td>CD1</td>
+	<td>10</td>
+	<td>FIRE(Long Version)</td>
+	<td>泉 陸奥彦</td>
+	<td class="comment_content">みんなガラケーに入れていた。<br>しかし、Ｋはこの曲があまり好きではないらしい（目覚まし用として使っていたために、この曲を聴くと目覚めの嫌な気持ちが想起されてしまう、とのこと）。</td>
+</tr>
+<tr>
+	<td>CD1</td>
+	<td>11</td>
+	<td>極東史記</td>
+	<td>あさき</td>
+	<td class="comment_content">割とみんなプレイしていた。</td>
+</tr>
+<tr>
+	<td>CD1</td>
+	<td>12</td>
+	<td>Purple storm</td>
+	<td>Trick Trap</td>
+	<td class="comment_content">みんなプレイしていた。<br>でも、赤ギターをクリアできた人は少なかった。</td>
+</tr>
+<tr>
+	<td>CD1</td>
+	<td>13</td>
+	<td>Little Prayer</td>
+	<td>土岐麻子</td>
+	<td class="comment_content">みんなプレイしていた。<br>みんなニギニギで死んでいた。</td>
+</tr>
+<tr>
+	<td>CD1</td>
+	<td>14</td>
+	<td>ZЁNITH</td>
+	<td>TЁЯRA</td>
+	<td class="comment_content">みんなプレイしていた。<br>Ｔは、この曲をクリアすることを当面の目標にしていたそうです。</td>
+</tr>
+<tr>
+	<td>CD1</td>
+	<td>15</td>
+	<td>Desert Rose</td>
+	<td>Kozo Nakamura</td>
+	<td class="comment_content">Ｉさんはこの曲をめっちゃ繋いでいた。すごい。<br>ところで、この曲には5連符が使われています。</td>
+</tr>
+<tr>
+	<td>CD1</td>
+	<td>16</td>
+	<td>カルマ</td>
+	<td>BUMP OF CHICKEN(版権)</td>
+	<td class="comment_content">みんなプレイしていた。<br>中でも、Ｉさんは、この曲の赤ドラム（！）をゲーセンでクリアしていた。すごい。</td>
+</tr>
+<tr>
+	<td>CD1</td>
+	<td>17</td>
+	<td>SEA ANEMONES</td>
+	<td>Jimmy Weckl</td>
+	<td class="comment_content">「四つ切」が使われているクリップ。</td>
+</tr>
+<tr>
+	<td>CD1</td>
+	<td>18</td>
+	<td>繚乱ヒットチャート</td>
+	<td>ギラギラメガネ団</td>
+	<td class="comment_content">みんなプレイしていた。</td>
+</tr>
+<tr>
+	<td>CD1</td>
+	<td>19</td>
+	<td>無言の街</td>
+	<td>P-Bombers</td>
+	<td class="comment_content">みんなプレイしていた（ネタ曲という意味でだと思う）。<br>Ｙはこの曲がギタフリデビューだった。</td>
+</tr>
+<tr>
+	<td>CD1</td>
+	<td>20</td>
+	<td>under control</td>
+	<td>Kevin Vecchione</td>
+	<td class="comment_content">よぼぼい！<br>この赤ベースは難度９９！<br>だからみんなプレイしていた。<br>けど散っていった。<br>なお、のちに難度が９４くらいに改定されました。</td>
+</tr>
+<tr>
+	<td>CD1</td>
+	<td>21</td>
+	<td>MODEL DD3</td>
+	<td>Mutsuhiko Izumi</td>
+	<td class="comment_content">Ｋが赤ベースをプレイしている横で、Ｙはそのプレイを携帯電話で録画していた。<br>Ｋはクリアと同時に「ヨッシャー」と歓喜の声を上げたのだが、その様子もバッチリ録画された。<br>「おめでとう！」→ハイタッチ→「撮ってたよ」→怒られた！</td>
+</tr>
+<tr>
+	<td>CD1</td>
+	<td>22</td>
+	<td>DAY DREAM</td>
+	<td>Mutsuhiko Izumi</td>
+	<td class="comment_content">誰もクリアできなかった。</td>
+</tr>
+<tr>
+	<td>CD1</td>
+	<td>23</td>
+	<td>イジワルなあなた</td>
+	<td>達見 恵 featured by 佐野宏晃</td>
+	<td class="comment_content">Ｎさんが選曲していたような気がします。</td>
+</tr>
+<tr>
+	<td>CD1</td>
+	<td>24</td>
+	<td>Atalante</td>
+	<td>Kozo Nakamura</td>
+	<td class="comment_content">みんなプレイしていた。<br>難度が高いとみんなプレイするよ。</td>
+</tr>
+<tr>
+	<td>CD1</td>
+	<td>25</td>
+	<td>STOP THIS TRAIN</td>
+	<td>Thomas Howard Lichtenstein</td>
+	<td class="comment_content">この曲、ネットでは赤より黄の方が難しいと云われています。<br>Ｋとプレイした時、Ｙは赤を選んだのですが、Ｋは黄を選んでいました。<br>今思うと、Ｋは黄の方が難しいことを知っていたのでは？</td>
+</tr>
+<tr>
+	<td>CD1</td>
+	<td>26</td>
+	<td>O JIYA</td>
+	<td>ASMAT&emi</td>
+	<td class="comment_content">説明不要。</td>
+</tr>
+<tr>
+	<td>CD1</td>
+	<td>27</td>
+	<td>Agnus Dei</td>
+	<td>あさき</td>
+	<td class="comment_content">みんなプレイしていた。<br>中でもＫが一番プレイしていたようだ（Ｓくんの家とかで）。</td>
+</tr>
+<tr>
+	<td>CD1</td>
+	<td>28</td>
+	<td>遠雷～遠くにある明かり～</td>
+	<td>HIGH and MIGHTY COLOR(版権)</td>
+	<td class="comment_content">この曲はカバー版なのですが、カバーボーカルを務めたのは小坂さん。<br>Ｎさんがやたら選曲していたのはそのためか？</td>
+</tr>
+<tr>
+	<td>CD1</td>
+	<td>29</td>
+	<td>Destiny lovers</td>
+	<td>くにたけみゆき</td>
+	<td class="comment_content">みんなプレイしていた。</td>
+</tr>
+<tr>
+	<td>CD1</td>
+	<td>30</td>
+	<td>pot-pourri d'marmalade</td>
+	<td>Orange Lounge</td>
+	<td class="comment_content">みんなプレイしていた。</td>
+</tr>
+<tr>
+	<td>CD1</td>
+	<td>31</td>
+	<td>Chronos</td>
+	<td>TAG</td>
+	<td class="comment_content">みんなプレイしていた。</td>
+</tr>
+<tr>
+	<td>CD1</td>
+	<td>32</td>
+	<td>STAR OF MUSE</td>
+	<td>Kenji Suzuki</td>
+	<td class="comment_content">Ｉさんがよく選曲していた印象。ロングバージョンも選曲していた。</td>
+</tr>
+<tr>
+	<td>CD1</td>
+	<td>33</td>
+	<td>MARIONETTE</td>
+	<td>BOOWY（版権）</td>
+	<td class="comment_content">いわゆる「四つ切」。</td>
+</tr>
+<tr>
+	<td>CD1</td>
+	<td>34</td>
+	<td>ROCKET DIVE</td>
+	<td>hide with spread beaver（版権）</td>
+	<td class="comment_content">みんなプレイしていた。<br>今思うと、この曲の赤ギター譜面はなかなかひどい。</td>
+</tr>
+<tr>
+	<td>CD1</td>
+	<td>35</td>
+	<td>南風</td>
+	<td>レミオロメン(版権)</td>
+	<td class="comment_content">みんなプレイしていた。</td>
+</tr>
+<tr>
+	<td>CD1</td>
+	<td>36</td>
+	<td>Say</td>
+	<td>TOMOKO MIWA</td>
+	<td class="comment_content">みんなプレイしていた。</td>
+</tr>
+<tr>
+	<td>CD2</td>
+	<td>37</td>
+	<td>鬼姫</td>
+	<td>鬼の子合唱団</td>
+	<td class="comment_content">どちらかと言うとＩさんの印象。<br>Ｙは、ちっともできません。</td>
+</tr>
+<tr>
+	<td>CD2</td>
+	<td>38</td>
+	<td>一網打尽</td>
+	<td>96</td>
+	<td class="comment_content">Ｋが🚀になかなか来ない日々があったのですが、そんな中、Ｋからメールが届きました。<br>メールに添付されている画像は、この曲の赤ギターをクリアしたものだった！<br>「すげー！」ってみんな言ったけど、次に「一人でゲーセン行ってる！」ってみんな言った。</td>
+</tr>
+<tr>
+	<td>CD2</td>
+	<td>39</td>
+	<td>ロマンス</td>
+	<td>PENICILLIN(版権)</td>
+	<td class="comment_content">この曲はＫの印象があります。</td>
+</tr>
+<tr>
+	<td>CD2</td>
+	<td>40</td>
+	<td>A SHOOTING STAR</td>
+	<td>古川もとあき</td>
+	<td class="comment_content">Ｋが、Ｙにメールを送ってくれたことがあり、そのメールには画像が添付されていました。<br>それは赤ギターをフルコンしたものでした。すごい。</td>
+</tr>
+<tr>
+	<td>CD2</td>
+	<td>41</td>
+	<td>LET ME BELIEVE</td>
+	<td>Brenda Vaughn</td>
+	<td class="comment_content">シルバーでこの曲をＫと一緒にプレイしたとき、その時にお互いのコンボが同じところで切れて他はお互いに繋ぐ、というシンクロみたいなプレイになってた。</td>
+</tr>
+<tr>
+	<td>CD2</td>
+	<td>42</td>
+	<td>香港☆超特急Z</td>
+	<td>明星有限公司</td>
+	<td class="comment_content">なんかＮさんのイメージがあります。</td>
+</tr>
+<tr>
+	<td>CD2</td>
+	<td>43</td>
+	<td>VOIDDD</td>
+	<td>Des-ROW feat.Kevin Vecchione</td>
+	<td class="comment_content">シルバーにて、アンコールに行くためによく選曲していた。</td>
+</tr>
+<tr>
+	<td>CD2</td>
+	<td>44</td>
+	<td>Green Lime</td>
+	<td>肥塚良彦</td>
+	<td class="comment_content">割とみんなプレイしていたように思うけれど、むずいよね。</td>
+</tr>
+<tr>
+	<td>CD2</td>
+	<td>45</td>
+	<td>TRAIN TRAIN</td>
+	<td>THE BLUE HEARTS（版権）</td>
+	<td class="comment_content">Ｉさん曰く、「この曲は基礎がかなり詰まっている」。<br>とＮさんに話していた記憶があります。</td>
+</tr>
+<tr>
+	<td>CD2</td>
+	<td>46</td>
+	<td>MODEL DD4</td>
+	<td>Mutsuhiko Izumi</td>
+	<td class="comment_content">みんなプレイしていた。</td>
+</tr>
+<tr>
+	<td>CD2</td>
+	<td>47</td>
+	<td>White Sketchbook</td>
+	<td>桜井零士(提供)</td>
+	<td class="comment_content">Ｖ５が稼働して初めてのプレイで、ＩさんもＮさんも早速プレイしていた。零士さんがお好きということである。</td>
+</tr>
+<tr>
+	<td>CD2</td>
+	<td>48</td>
+	<td>NOCTURNE No.9</td>
+	<td>布袋寅泰(版権)</td>
+	<td class="comment_content">みんなプレイしていた。</td>
+</tr>
+<tr>
+	<td>CD2</td>
+	<td>49</td>
+	<td>この子の七つのお祝いに</td>
+	<td>あさき</td>
+	<td class="comment_content">Ｉさんはこの曲をめっちゃ繋いでいた。すごい。</td>
+</tr>
+<tr>
+	<td>CD2</td>
+	<td>50</td>
+	<td>Misirlou</td>
+	<td>THE SURF COASTERS（版権）</td>
+	<td class="comment_content">Uが粘着していた。</td>
+</tr>
+<tr>
+	<td>CD2</td>
+	<td>51</td>
+	<td>brave!</td>
+	<td>TЁЯRA</td>
+	<td class="comment_content">Ｉさんの印象があります。</td>
+</tr>
+<tr>
+	<td>CD2</td>
+	<td>52</td>
+	<td>ヒマワリ</td>
+	<td>RIYU from BeForU</td>
+	<td class="comment_content">みんなプレイしていた。<br>中でもＮさんは、やたらプレイしていた。</td>
+</tr>
+<tr>
+	<td>CD2</td>
+	<td>53</td>
+	<td>三毛猫ロック</td>
+	<td>亜熱帯マジ-SKA爆弾</td>
+	<td class="comment_content">みんなプレイしていた。<br>特に、Ｋがよくプレイしていたように思う。</td>
+</tr>
+<tr>
+	<td>CD2</td>
+	<td>54</td>
+	<td>三毛猫JIVE&ジャイブ</td>
+	<td>小野秀幸</td>
+	<td class="comment_content">Ｉさんの印象があります。</td>
+</tr>
+<tr>
+	<td>CD2</td>
+	<td>55</td>
+	<td>カゴノトリ</td>
+	<td>橙色特別室</td>
+	<td class="comment_content">Ｙはよく知らないのですが、ＫはＳくんの家やＮさんの家でプレイしまくっていたそうです。</td>
+</tr>
+<tr>
+	<td>CD2</td>
+	<td>56</td>
+	<td>大切なもの</td>
+	<td>ROAD OF MAJOR(版権)</td>
+	<td class="comment_content">みんなプレイしていた。<br>ＸＧの初プレイ時に選曲した記憶があります。</td>
+</tr>
+<tr>
+	<td>CD2</td>
+	<td>57</td>
+	<td>innocent world</td>
+	<td>Mr.Children(版権)</td>
+	<td class="comment_content">この曲は、ゴールドが🚀に入ったときにＩさんがプレイしていた記憶がある。</td>
+</tr>
+<tr>
+	<td>CD2</td>
+	<td>58</td>
+	<td>Dynamis</td>
+	<td>千本松 仁</td>
+	<td class="comment_content">チョコボール。</td>
+</tr>
+<tr>
+	<td>CD2</td>
+	<td>59</td>
+	<td>Ring</td>
+	<td>Kozo Nakamura</td>
+	<td class="comment_content">みんなプレイしていた。<br>Ｖ３といえばこの曲、とＹは思います。</td>
+</tr>
+<tr>
+	<td>CD2</td>
+	<td>60</td>
+	<td>CLASSIC PARTY triathlon</td>
+	<td>小野秀幸</td>
+	<td class="comment_content">Ｙは、この曲の緑をクリアすることが当面の目標だった。</td>
+</tr>
+<tr>
+	<td>CD2</td>
+	<td>61</td>
+	<td>ミラージュ・レジデンス</td>
+	<td>Jimmy Weckl</td>
+	<td class="comment_content">サビ前の「テケテーテケテーテケテーテケテーーーーーー」の部分、みんな「ケ」の部分を無視していた。<br>「ケ」の部分を弾くようにするとかなり難しいためである。</td>
+</tr>
+<tr>
+	<td>CD2</td>
+	<td>62</td>
+	<td>無常の星</td>
+	<td>P-Bombers</td>
+	<td class="comment_content">Ｙは、この曲が好きで、中学の頃に歌詞を調べるほどでした。<br>ある日、Uに「この曲の歌詞知ってる」と言ったことがあるのですが、Ｕの返事は「じゃあ歌ってよ」。<br>Ｙは恥ずかしくて歌えませんでした、だめじゃん。</td>
+</tr>
+<tr>
+	<td>CD2</td>
+	<td>63</td>
+	<td>『termination』</td>
+	<td>今井優子 with NM</td>
+	<td class="comment_content">この曲には変な思い出があります。<br>当時、Ｙは２Ｐでプレイしており、１Ｐのプレイヤーと一緒にプレイしていました。<br>そしてこの曲はＶ３のランダムで選曲されたものです。<br>その時の１ＰであるUはＣメロ辺りで死んでしまいました。<br>で、Ｙだけが生き残って大サビに入ろうとしたとき、Uはスタート・セレクトの同時押し（＝強制閉店）をしたのです！Ｙまだプレイしてるのに！！</td>
+</tr>
+<tr>
+	<td>CD2</td>
+	<td>64</td>
+	<td>Timepiece phase II</td>
+	<td>佐々木博史</td>
+	<td class="comment_content">みんなプレイしていた。<br>みんな赤ベばっかりプレイしていた。Ｙは苦手である。</td>
+</tr>
+<tr>
+	<td>CD2</td>
+	<td>65</td>
+	<td>WE ARE</td>
+	<td>TЁЯRA</td>
+	<td class="comment_content">みんなプレイしていた。<br>ところで、Ｙはこの曲をワンピースの曲と勘違いしていた。なんかそれっぽくないっすか？</td>
+</tr>
+<tr>
+	<td>CD2</td>
+	<td>66</td>
+	<td>VITALIZE</td>
+	<td>SPHINX</td>
+	<td class="comment_content">みんなプレイしていた。<br>なぜなら、コンチェを出すのに必死だったから。</td>
+</tr>
+<tr>
+	<td>CD2</td>
+	<td>67</td>
+	<td>El Dorado</td>
+	<td>TAG</td>
+	<td class="comment_content">みんなプレイしていた。</td>
+</tr>
+<tr>
+	<td>CD2</td>
+	<td>68</td>
+	<td>SUZY AND THE TIME MACHINE</td>
+	<td>Thomas Howard Lichtenstein</td>
+	<td class="comment_content">Ｕの印象があります。<br>この曲結構好きです。</td>
+</tr>
+<tr>
+	<td>CD2</td>
+	<td>69</td>
+	<td>蛹</td>
+	<td>あさき</td>
+	<td class="comment_content">みんなプレイしていた。<br>ものすごく個人的なことですが、この曲はゴールドのイメージがものすごいです。<br>ゴールドはなんというか独特の雰囲気がありました。</td>
+</tr>
+<tr>
+	<td>CD2</td>
+	<td>70</td>
+	<td>DEPARTURE</td>
+	<td>AKINO LEE</td>
+	<td class="comment_content">まさしくUの曲。<br>Ｕは、この曲の黄色ギターをやたらプレイしていた（この譜面の難度は29とかなり低いのだが、この譜面は巷では難度詐欺とされている。そのためか、Ｕはラストで閉店しまくっていた）。</td>
+</tr>
+<tr>
+	<td>CD2</td>
+	<td>71</td>
+	<td>GLIDE</td>
+	<td>TЁЯRA</td>
+	<td class="comment_content">みんなプレイしていた。<br>中でも、Ｈはやたら選曲していた。</td>
+</tr>
+<tr>
+	<td>CD2</td>
+	<td>72</td>
+	<td>子供の落書き帳</td>
+	<td>佐々木博史</td>
+	<td class="comment_content">みんなプレイしていた。</td>
+</tr>
+<tr>
+	<td>CD2</td>
+	<td>73</td>
+	<td>愛のしるし</td>
+	<td>PUFFY(版権)</td>
+	<td class="comment_content">4thMixにて、Ｋがアンコールステージに行くためによく選曲していた。</td>
+</tr>
+<tr>
+	<td>CD2</td>
+	<td>74</td>
+	<td>Concertino in Blue</td>
+	<td>佐々木博史</td>
+	<td class="comment_content">🚀にゴールドが入ったとき、コンチェが開放されていなかったため、この曲を開放するために、フリーモードではなくアーケードモードをみんなでプレイするという協力体制が敷かれた。<br>ところで、ゴールドは確かＩさんとＮさんがＳくんかＭから買った記憶があります。シルバーだったかも。</td>
+</tr>
+<tr>
+	<td>CD2</td>
+	<td>75</td>
+	<td>CaptivAte～裁き～</td>
+	<td>DJ YOSHITAKA feat.A/I</td>
+	<td class="comment_content">みんなプレイしていた。<br>ベースクリアできる人は居たっけ？</td>
+</tr>
+<tr>
+	<td>CD3</td>
+	<td>76</td>
+	<td>KAISER PHOENIX</td>
+	<td>96</td>
+	<td class="comment_content">みんなプレイしていた。</td>
+</tr>
+<tr>
+	<td>CD3</td>
+	<td>77</td>
+	<td>人にやさしく</td>
+	<td>THE BLUE HEARTS(版権)</td>
+	<td class="comment_content">Ｉさんの印象があります。</td>
+</tr>
+<tr>
+	<td>CD3</td>
+	<td>78</td>
+	<td>MAD BLAST</td>
+	<td>THE INFECTION</td>
+	<td class="comment_content">２回目のリフの後の長いオルタ地帯は、３→４→４→…と奇数から始まる。これを↓↑↓→↓↑↓↑→↓↑↓↑→…と弾くと上手く処理できる。これは「オルタリセット」と呼ばれる技法だが、🚀ではこの話はあまりされなかった。<br>そんな中、Ｋはオルタリセットを実践していた。<br>ところで、Ｙはオルタリセットとかオルタ意識とかのことを知ったのは大学生になってからなので、プレイしている頃は拍意識はもちろん裏拍すら知りませんでした。アホ。</td>
+</tr>
+<tr>
+	<td>CD3</td>
+	<td>79</td>
+	<td>CLASSIC PARTY 3</td>
+	<td>小野秀幸</td>
+	<td class="comment_content">この曲の赤ギターの難度はシルバーでは８５、ゲーセンでは９５？でした。<br>ゲーセンの難度が🚀に周知されると、皆がこぞって選曲するようになった。<br>そして散っていった。</td>
+</tr>
+<tr>
+	<td>CD3</td>
+	<td>80</td>
+	<td>天体観測</td>
+	<td>BUMP OF CHICKEN(版権)</td>
+	<td class="comment_content">まさしくＩさんの曲。<br>なぜなら、Ｉさんの教科書にこの曲の歌詞が落書きされていたからだ。</td>
+</tr>
+<tr>
+	<td>CD3</td>
+	<td>81</td>
+	<td>チカラ</td>
+	<td>BeForU</td>
+	<td class="comment_content">みんなプレイしていた。</td>
+</tr>
+<tr>
+	<td>CD3</td>
+	<td>82</td>
+	<td>BLACK OUT</td>
+	<td>BeForU</td>
+	<td class="comment_content">クリップはライブ映像っぽいですが、このライブはクリップ制作のために行われたのだそう。そんな経緯なのにたくさんのファンが駆けつけた…BeforeUすごくね？！<br>とＮさんが熱弁していた。</td>
+</tr>
+<tr>
+	<td>CD3</td>
+	<td>83</td>
+	<td>ゴーイング マイ ウェイ！</td>
+	<td>達見 恵 featured by 佐野宏晃</td>
+	<td class="comment_content">みんなプレイしていた。</td>
+</tr>
+<tr>
+	<td>CD3</td>
+	<td>84</td>
+	<td>RЁVOLUTIΦN</td>
+	<td>TЁЯRA</td>
+	<td class="comment_content">みんなプレイしていた。</td>
+</tr>
+<tr>
+	<td>CD3</td>
+	<td>85</td>
+	<td>螺子之人</td>
+	<td>あさき</td>
+	<td class="comment_content">みんなプレイしていた。<br>Ｔはこの曲のクリップが苦手とのこと。</td>
+</tr>
+<tr>
+	<td>CD3</td>
+	<td>86</td>
+	<td>Dragon Blade</td>
+	<td>Kozo Nakamura</td>
+	<td class="comment_content">みんなプレイしていた。<br>中でもＩさんは、やたらプレイしていた。<br>Ｉさんは、途中の３連を難なく繋いでいた。すごい。</td>
+</tr>
+<tr>
+	<td>CD3</td>
+	<td>87</td>
+	<td>月光蝶</td>
+	<td>あさき</td>
+	<td class="comment_content">みんなプレイしていた。</td>
+</tr>
+<tr>
+	<td>CD3</td>
+	<td>88</td>
+	<td>Funky sonic World</td>
+	<td>Des-ROW feat.SHIGE</td>
+	<td class="comment_content">みんなプレイしていた。<br>中でもＫがYouTubeでロングバージョンを聴いていた。</td>
+</tr>
+<tr>
+	<td>CD3</td>
+	<td>89</td>
+	<td>Riff Riff Orbit</td>
+	<td>泉 陸奥彦</td>
+	<td class="comment_content">Ｙはこの曲が好きだ！</td>
+</tr>
+<tr>
+	<td>CD3</td>
+	<td>90</td>
+	<td>真実～GFDM Ver.～</td>
+	<td>柴田浩之(提供)</td>
+	<td class="comment_content">Ｔは、Ｖ３のランダム選曲でこの曲が選ばれたとき、「あっ、真実だ。」と言った。<br>この曲、誰もプレイしていなかったのでＴも馴染みが無かったように思われるので、そのリアクションはいろいろツッコミどころがあった。</td>
+</tr>
+<tr>
+	<td>CD3</td>
+	<td>91</td>
+	<td>Magic words？</td>
+	<td>森野くま子</td>
+	<td class="comment_content">この曲のギターソロ（Bridge）の最後には16分テケテケがあるのですが、黄色ギターでは歯抜けになっています（ゴーストノーツ）。<br>Uはこの曲の黄色ギターをプレイして歯抜けテケテケ地帯を超えたとき、「今の赤だとどうなってるんだろう？」みたいなことを言いながら自殺し、即赤ギターを選曲していました。好奇心ってすごい。</td>
+</tr>
+<tr>
+	<td>CD3</td>
+	<td>92</td>
+	<td>joker</td>
+	<td>Jimmy Weckl</td>
+	<td class="comment_content">なんだかＩさんの印象があります。</td>
+</tr>
+<tr>
+	<td>CD3</td>
+	<td>93</td>
+	<td>5-10</td>
+	<td>good-cool ft.近藤葵</td>
+	<td class="comment_content">Ｙはこの曲が好きだ！<br>ギターの音が大好き。ソロも好きだけどリフとかの歪みが大好き。</td>
+</tr>
+<tr>
+	<td>CD3</td>
+	<td>94</td>
+	<td>大和撫子魂</td>
+	<td>小坂りゆ(提供)</td>
+	<td class="comment_content">みんなプレイしていた。<br>中でも、Ｎさんは情熱を注いでいたように思う。</td>
+</tr>
+<tr>
+	<td>CD3</td>
+	<td>95</td>
+	<td>サークルコースター</td>
+	<td>SABOTEN(提供)</td>
+	<td class="comment_content">みんなプレイしていた。<br>なお、この曲は提供曲としては珍しくカットされていません。つまり原曲そのままです。短い。</td>
+</tr>
+<tr>
+	<td>CD3</td>
+	<td>96</td>
+	<td>Day's!</td>
+	<td>よしくんとホッシー☆</td>
+	<td class="comment_content">Ｎさんが「星野さんが好き」とか言っていました。<br>理由は「小坂さんと似ているから」。<br>それで良いのか？</td>
+</tr>
+<tr>
+	<td>CD3</td>
+	<td>97</td>
+	<td>タラッタダンス</td>
+	<td>森野くま子</td>
+	<td class="comment_content">みんなプレイしていた。<br>Ｎさんが、「この曲はアーケードだと60だぜ」みたいなことを言っており、逆詐欺であることをみんなに伝えていました。<br>ところで、この曲はハネたリズムのオルタを要求されるのですが、誰もが１６分のリズムでオルタを奏でていました（テッテレッレテッテレッレをテレテレテレテレといった具合）。でも、その方法でもPERFECTになるんだから問題ないよね。</td>
+</tr>
+<tr>
+	<td>CD3</td>
+	<td>98</td>
+	<td>DEPEND ON ME(Long Version)</td>
+	<td>Thomas Howard Lichtenstein</td>
+	<td class="comment_content">「エーブリシィ～ング♪」ってUがノッていた。</td>
+</tr>
+<tr>
+	<td>CD3</td>
+	<td>99</td>
+	<td>AXIS</td>
+	<td>千本松 仁</td>
+	<td class="comment_content">なんかＫのイメージがあります。</td>
+</tr>
+<tr>
+	<td>CD3</td>
+	<td>100</td>
+	<td>Die Zauberflote</td>
+	<td>わんにゃん☆パニックス</td>
+	<td class="comment_content">みんなプレイしていた。<br>中でもUは、この曲の赤ベースをやたらプレイしていた。</td>
+</tr>
+<tr>
+	<td>CD3</td>
+	<td>101</td>
+	<td>ESCAPE TO THE SKY★彡</td>
+	<td>TЁЯRA</td>
+	<td class="comment_content">すげーＩさんとＮさんの印象があります。<br>ＩさんとＮさんは、TERRAが好きだったように思います。</td>
+</tr>
+<tr>
+	<td>CD3</td>
+	<td>102</td>
+	<td>On Cloud Nine</td>
+	<td>Brian Smith</td>
+	<td class="comment_content">個人的に好きな曲です。<br>また、Ｂがやたら好きな曲でした。</td>
+</tr>
+<tr>
+	<td>CD3</td>
+	<td>103</td>
+	<td>凛として咲く花の如く</td>
+	<td>紅色リトマス</td>
+	<td class="comment_content">みんなプレイしていた。<br>ところで、Ｙはこの譜面が苦手ですので進んで選曲しないのですが、Ｎさんと２人プレイする際はＮさんが選曲するので、プレイする機会が多くありました。<br>後日、Ｎさんから「Ｙさんって凛好きだよねぇ」って言われたことがあるんですが、Ｎさんが選んでいるんだよ。</td>
+</tr>
+<tr>
+	<td>CD3</td>
+	<td>104</td>
+	<td>going up</td>
+	<td>colors</td>
+	<td class="comment_content">みんなプレイしていた。</td>
+</tr>
+<tr>
+	<td>CD3</td>
+	<td>105</td>
+	<td>White tornado</td>
+	<td>Trick Trap</td>
+	<td class="comment_content">この曲、Ｉさんが90台の曲で一番初めにクリアした曲、だったような？<br>ただ、この曲は家庭用Vだと85？くらいで、Ｉさんは「９０も無い」みたいなことを言っていたような気がします。クール。</td>
+</tr>
+<tr>
+	<td>CD3</td>
+	<td>106</td>
+	<td>MIDNIGHT SUN(Long Version)</td>
+	<td>Mutsuhiko Izumi</td>
+	<td class="comment_content">ある日🚀に激震が走った！<br>「なんかオルタがやべー曲がある！！！」<br>この曲は速ぇし長ぇしでやべぇ。<br>みんな挑戦しては撃沈。<br>でも、遅れて遊びに来たＫが割と簡単に（プレステのコントローラーで）クリアしちゃいました。凄ぇ。</td>
+</tr>
+<tr>
+	<td>CD3</td>
+	<td>107</td>
+	<td>孤高の花</td>
+	<td>SHACHI(提供)</td>
+	<td class="comment_content">なんとなくですが、Uのイメージがあります。</td>
+</tr>
+<tr>
+	<td>CD3</td>
+	<td>108</td>
+	<td>PRIME LIGHT</td>
+	<td>TAG</td>
+	<td class="comment_content">この曲はＩさんの印象があります。<br>この曲は好きです。</td>
+</tr>
+<tr>
+	<td>CD3</td>
+	<td>109</td>
+	<td>sailing day</td>
+	<td>BUMP OF CHICKEN（版権）</td>
+	<td class="comment_content">この曲はＩさんでしょう。</td>
+</tr>
+<tr>
+	<td>CD3</td>
+	<td>110</td>
+	<td>Desert rain</td>
+	<td>桜井零士</td>
+	<td class="comment_content">ものすごくＩさんを思い出します。</td>
+</tr>
+<tr>
+	<td>CD3</td>
+	<td>111</td>
+	<td>Forever free</td>
+	<td>colors feat.Luca</td>
+	<td class="comment_content">みんなプレイしていた。<br>この曲、ギターがかっこいいです。<br>しかし、サントラでは、ギターの主張が非常に抑えられているため、<s>えらく基本フレーズの少ないスルメ曲に聴こえてしまい、</s>プレイ時との印象がだいぶ異なります。</td>
+</tr>
+<tr>
+	<td>CD3</td>
+	<td>112</td>
+	<td>恋は臆病</td>
+	<td>達見 恵</td>
+	<td class="comment_content">割とみんなプレイしていたような気がするけれど、Ｋの印象があります。</td>
+</tr>
+<tr>
+	<td>CD4</td>
+	<td>113</td>
+	<td>Strike Party!!!</td>
+	<td>BeForU(提供)</td>
+	<td class="comment_content">みんなプレイしていた。</td>
+</tr>
+<tr>
+	<td>CD4</td>
+	<td>114</td>
+	<td>Slang</td>
+	<td>Kozo Nakamura</td>
+	<td class="comment_content">Ｙはこの曲が好きだ！</td>
+</tr>
+<tr>
+	<td>CD4</td>
+	<td>115</td>
+	<td>RIGHT ON TIME</td>
+	<td>Robbie Danzie</td>
+	<td class="comment_content">西尾のゲーセンにて、木村っぽい見た目の中学生？が、よそ見しながらクリアしていた（ドラマニ）。</td>
+</tr>
+<tr>
+	<td>CD4</td>
+	<td>116</td>
+	<td>The Least 100sec</td>
+	<td>佐々木博史</td>
+	<td class="comment_content">超えた人って居たっけ？<br>ところで、Ｙは緑ベースがとても苦手。なのでスパランを掛けてプレイしていたら、Ｋに「スパランの方が楽やね」と見破られた。</td>
+</tr>
+<tr>
+	<td>CD4</td>
+	<td>117</td>
+	<td>MODEL FT2</td>
+	<td>Mutsuhiko Izumi</td>
+	<td class="comment_content">まさしくＫの曲。<br>Ｋは、ミラクルバージョンよりこっちの方が好きだそうです。<br>明くる日、ＫとＮさんが「ＫがＦＴ２赤ギターをクリアできたら、Ｎさんがジュースを奢る」という賭け事をしていました。<br>結果は、Ｋが割と簡単にクリアしてました。</td>
+</tr>
+<tr>
+	<td>CD4</td>
+	<td>118</td>
+	<td>正論</td>
+	<td>鈴木愛</td>
+	<td class="comment_content">シルバーが🚀に入ったとき、みんなプレイしていたような気がします。</td>
+</tr>
+<tr>
+	<td>CD4</td>
+	<td>119</td>
+	<td>Can't Help Fall In Love</td>
+	<td>HI-STANDARD（版権）</td>
+	<td class="comment_content">Uの印象があります。</td>
+</tr>
+<tr>
+	<td>CD4</td>
+	<td>120</td>
+	<td>GLAMOROUS SKY</td>
+	<td>NANA starring MIKA NAKASHIMA(版権)</td>
+	<td class="comment_content">ある日、ワイリングが多い曲を探すことになって、この曲が最も多いと🚀で認定されました。</td>
+</tr>
+<tr>
+	<td>CD4</td>
+	<td>121</td>
+	<td>花の唄</td>
+	<td>ちーちゃん</td>
+	<td class="comment_content">みんなプレイしていた。</td>
+</tr>
+<tr>
+	<td>CD4</td>
+	<td>122</td>
+	<td>over there</td>
+	<td>vox</td>
+	<td class="comment_content">みんなプレイしていた。</td>
+</tr>
+<tr>
+	<td>CD4</td>
+	<td>123</td>
+	<td>MODEL DD6</td>
+	<td>Mutsuhiko Izumi</td>
+	<td class="comment_content">みんなプレイしていた。<br>特に印象に残っているのは、Ｋが赤ギターをプレイしていてＤがそのプレイを見ていた時。曲途中の「テレテーーーーーテレテーーーーーテレテーーーーーーーーーーーーー」の部分をＫがミスった時、Ｄが「回復地帯でミスんなよ！」みたいなことを言いました。Ｄはギタフリを全然プレイしていなかったのに「回復地帯」なんて言葉を発せるのだから、音ゲーに精通していることが分かります。また、「回復地帯」は音ゲーに通底している概念であることも確認できる。…とかなんとか思いました。</td>
+</tr>
+<tr>
+	<td>CD4</td>
+	<td>124</td>
+	<td>偶然という名の必然</td>
+	<td>ROAD OF MAJOR(提供)</td>
+	<td class="comment_content">みんなプレイしていた。<br>中でも、Bはこの曲のロングバージョン（というより原曲）をYouTubeでよく聴いていた。</td>
+</tr>
+<tr>
+	<td>CD4</td>
+	<td>125</td>
+	<td>ギタードライブ</td>
+	<td>Handsome JET</td>
+	<td class="comment_content">Ｖ３のプラクティスモードにて、Uがこの曲の「ぷに、ぷに、ぷに！」の部分をスロー化してマツコ化した「ぷに」で爆笑しまくっていた。</td>
+</tr>
+<tr>
+	<td>CD4</td>
+	<td>126</td>
+	<td>ルックス</td>
+	<td>meli ♥ melo</td>
+	<td class="comment_content">みんなプレイしていた。<br>特にＩさんの印象があります。</td>
+</tr>
+<tr>
+	<td>CD4</td>
+	<td>127</td>
+	<td>BOBBY SUE AND SKINNY JIM</td>
+	<td>Raj Ramayya</td>
+	<td class="comment_content">Ｉさん曰く「８０台で一番楽」。</td>
+</tr>
+<tr>
+	<td>CD4</td>
+	<td>128</td>
+	<td>LUCKY?STAFF</td>
+	<td>泉 陸奥彦</td>
+	<td class="comment_content">Yの好み。</td>
+</tr>
+<tr>
+	<td>CD4</td>
+	<td>129</td>
+	<td>アンダンテ</td>
+	<td>矢井田瞳(版権)</td>
+	<td class="comment_content">Yの好み。</td>
+</tr>
+<tr>
+	<td>CD4</td>
+	<td>130</td>
+	<td>万華鏡</td>
+	<td>Jimmy Weckl</td>
+	<td class="comment_content">Yの好み。</td>
+</tr>
+<tr>
+	<td>CD4</td>
+	<td>131</td>
+	<td>本日ハ晴天ナリ</td>
+	<td>Do As Infinity(版権)</td>
+	<td class="comment_content">Yの好み。</td>
+</tr>
+<tr>
+	<td>CD4</td>
+	<td>132</td>
+	<td>Secrets of your heart</td>
+	<td>TAEKO</td>
+	<td class="comment_content">Yの好み。</td>
+</tr>
+<tr>
+	<td>CD4</td>
+	<td>133</td>
+	<td>USED TO ROCK'N'ROLL</td>
+	<td>Brad Holmes</td>
+	<td class="comment_content">Yの好み。</td>
+</tr>
+<tr>
+	<td>CD4</td>
+	<td>134</td>
+	<td>三度笠ポン太は今日も行く</td>
+	<td>荒牧陽子</td>
+	<td class="comment_content">Yの好み。</td>
+</tr>
+<tr>
+	<td>CD4</td>
+	<td>135</td>
+	<td>SUMMER SUN</td>
+	<td>Brad Holmes</td>
+	<td class="comment_content">Yの好み。</td>
+</tr>
+<tr>
+	<td>CD4</td>
+	<td>136</td>
+	<td>Wall Street down-sizer</td>
+	<td>Thomas Howard Lichtenstein</td>
+	<td class="comment_content">Yの好み。</td>
+</tr>
+<tr>
+	<td>CD4</td>
+	<td>137</td>
+	<td>Wonderful Workers</td>
+	<td>Jimmy Weckl</td>
+	<td class="comment_content">Yの好み。</td>
+</tr>
+<tr>
+	<td>CD4</td>
+	<td>138</td>
+	<td>MISS YOU</td>
+	<td>くにたけみゆき</td>
+	<td class="comment_content">Yの好み。</td>
+</tr>
+<tr>
+	<td>CD4</td>
+	<td>139</td>
+	<td>motto</td>
+	<td>JUDY AND MARY（版権）</td>
+	<td class="comment_content">Yの好み。</td>
+</tr>
+<tr>
+	<td>CD4</td>
+	<td>140</td>
+	<td>SOME HARD REACTIONS</td>
+	<td>古川もとあき</td>
+	<td class="comment_content">Yの好み。</td>
+</tr>
+<tr>
+	<td>CD4</td>
+	<td>141</td>
+	<td>FIREBALL</td>
+	<td>Sweet little 30's</td>
+	<td class="comment_content">Yの好み。</td>
+</tr>
+<tr>
+	<td>CD4</td>
+	<td>142</td>
+	<td>FLY HIGH</td>
+	<td>Bill Germain</td>
+	<td class="comment_content">Yの好み。</td>
+</tr>
+<tr>
+	<td>CD4</td>
+	<td>143</td>
+	<td>GET READY</td>
+	<td>古川もとあき</td>
+	<td class="comment_content">Yの好み。</td>
+</tr>
+<tr>
+	<td>CD4</td>
+	<td>144</td>
+	<td>しっぽのロック</td>
+	<td>板橋ギャング</td>
+	<td class="comment_content">Yの好み。</td>
+</tr>
+<tr>
+	<td>CD4</td>
+	<td>145</td>
+	<td>HIGH</td>
+	<td>Nitza Melas</td>
+	<td class="comment_content">Yの好み。</td>
+</tr>
+<tr>
+	<td>CD4</td>
+	<td>146</td>
+	<td>CARNIVAL DAY</td>
+	<td>Paula Terry&Fu Fu's</td>
+	<td class="comment_content">Yの好み。</td>
+</tr>
+<tr>
+	<td>CD4</td>
+	<td>147</td>
+	<td>MAGICAL JET TOUR</td>
+	<td>泉 陸奥彦</td>
+	<td class="comment_content">Yの好み。</td>
+</tr>
+<tr>
+	<td>CD4</td>
+	<td>148</td>
+	<td>One Phrase Blues</td>
+	<td>小野秀幸</td>
+	<td class="comment_content">Yの好み。</td>
+</tr>
+<tr>
+	<td>CD4</td>
+	<td>149</td>
+	<td>Jake in the Box</td>
+	<td>千本松 仁</td>
+	<td class="comment_content">Yの好み。</td>
+</tr>
+<tr>
+	<td>CD4</td>
+	<td>150</td>
+	<td>HEAVEN'S COCKTAIL</td>
+	<td>高野治幸＆NEW BIG 5</td>
+	<td class="comment_content">Yの好み。</td>
+</tr>
+<tr>
+	<td>CD4</td>
+	<td>151</td>
+	<td>RISE</td>
+	<td>泉 陸奥彦</td>
+	<td class="comment_content">Yの好み。</td>
+</tr>
+<tr>
+	<td>CD4</td>
+	<td>152</td>
+	<td>Fairy Tales</td>
+	<td>Mutsuhiko Izumi</td>
+	<td class="comment_content">Yの好み。</td>
+</tr>
+<tr>
+	<td>CD4</td>
+	<td>153</td>
+	<td>MODEL DD8</td>
+	<td>Mutsuhiko Izumi feat.Marty Friedman</td>
+	<td class="comment_content">Yの好み。</td>
+</tr>
+
+			</tbody>
+		</table>
+		<hr>
+		<ul>
+			<p>曲名・クレジットは以下よりお借りしました。</p>
+			<li>
+				<a target="_blank" rel="noopener noreferrer" href="http://bemaniwiki.com/?GuitarFreaksV8%A1%F5DrumManiaV8/%B5%EC%B6%CA%A5%EA%A5%B9%A5%C8">GuitarFreaksV8＆DrumManiaV8/旧曲リスト - BEMANIWiki 2nd</a>
+			</li>
+			<li>
+				<a target="_blank" rel="noopener noreferrer" href="http://bemaniwiki.com/?GuitarFreaksV8%A1%F5DrumManiaV8/%BA%EF%BD%FC%B6%CA%A5%EA%A5%B9%A5%C8">GuitarFreaksV8＆DrumManiaV8/削除曲リスト - BEMANIWiki 2nd</a>
+			</li>
+			<li>
+				<a target="_blank" rel="noopener noreferrer" href="https://wikiwiki.jp/csgfdm/4thMIX%EF%BC%863rdMIX/%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB%E6%9B%B2">4thMIX＆3rdMIX/オリジナル曲 - CS版ギタドラまとめ Wiki*</a>
+			</li>
+			<li>
+				<a target="_blank" rel="noopener noreferrer" href="https://wikiwiki.jp/csgfdm/4thMIX%EF%BC%863rdMIX/%E7%89%88%E6%A8%A9%E6%9B%B2">4thMIX＆3rdMIX/版権曲 - CS版ギタドラまとめ Wiki*</a>
+			</li>
+		</ul>
+		<script>
+			function change_tableFilterForm(){
+				filterTable();
+			}
+			function filterTable(){
+				const evt = event.currentTarget;
+				const checkboxs = evt.querySelectorAll(".filterCategory");
+				const checkboxnum = Number(checkboxs[0].dataset.tarnum);
+				const tartable = evt.parentNode.querySelector("table");
+				const trs = tartable.querySelectorAll("tbody tr");
+				
+				for(let i = 0; i < trs.length; i++){
+					const categoryname = trs[i].getElementsByTagName("td")[checkboxnum].textContent;
+					let f = false;
+					for(let j = 0; j < checkboxs.length; j++){
+						if(checkboxs[j].checked){
+							if(checkboxs[j].value === categoryname){
+								f = true;
+								break;
+							}
+						}
+					}
+					if(f){
+						trs[i].classList.remove("hiddenContent");
+					}else{
+						trs[i].classList.add("hiddenContent");
+					}
+				}
+			}
+			function setInitMedia(){
+				const url = new URL(location.href);
+				const searchParams = new URLSearchParams(url.search);
+				const media = searchParams.get("media");
+				
+				const checkboxs = extractionMusicTable.querySelectorAll("input.media");
+				let setcount = 0;
+				for(let i = 0; i < checkboxs.length; i++){
+					if(checkboxs[i].value === media){
+						checkboxs[i].checked = true;
+						setcount++;
+					}
+				}
+				if(setcount === 0){
+					for(let i = 0; i < checkboxs.length; i++){
+						checkboxs[i].checked = true;
+					}
+				}
+			}
+			function change_checkbox_comment(){
+				const f = checkbox_comment.checked;
+				document.body.classList.toggle("show_comment", f);
+			}
+			(()=>{
+				setInitMedia();
+				const form = extractionMusicTable;
+				form.addEventListener("change",change_tableFilterForm,false);
+				form.dispatchEvent(new Event("change"));
+				
+				checkbox_comment.addEventListener("change",change_checkbox_comment,false);
+			})();
+			
+		</script>
+	</body>
 </html>
