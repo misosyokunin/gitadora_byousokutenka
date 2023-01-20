@@ -1,1 +1,0 @@
-# gitadora_byousokutenka
